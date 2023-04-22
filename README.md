@@ -15,6 +15,7 @@ The Output:
 ![image](https://user-images.githubusercontent.com/97832138/233768470-16113cc4-94c5-4880-88e6-eb2b66a9f569.png)
 
 2>Preemptive
+
 ![image](https://user-images.githubusercontent.com/97832138/233770934-109d7147-d65c-45c9-96a5-679d49275f8f.png)
 
 The Output
