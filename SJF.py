@@ -58,11 +58,13 @@ if g == 1:
         #print(que)
         con += 1
 
-        for op in process:
-            if op[1] in range(prev_comp,comp_time):
-                que.append(op)
-                arival.remove(op[1])
-                process.remove(op)
+        buffer = []
+        for i in process:
+            if i[1] in range(prev_comp,comp_time):
+                buffer.append(i)
+        for g in buffer:
+            process.remove(g)
+            que.append(g)
 
     print("\n\nThe answer is:\n\n")
     print("-"*61)
@@ -86,14 +88,17 @@ if g == 1:
 
 else:
     #print(f"Starting {arival}")
-    #print(f"Staring {process}")
+    print(f"Staring {process}")
     print("\n\nGnatt Chart is as follows:\n")
     while con<n:
         print(f"Time {comp_time}-->",end="")
-        for op in process:
-            if op[1] in range(prev_comp,comp_time+1):
-                que.append(op)
-                process.remove(op)
+        buffer = []
+        for i in process:
+            if i[1] in range(prev_comp,comp_time+1):
+                buffer.append(i)
+        for g in buffer:
+            process.remove(g)
+            que.append(g)
 
         #print(f"Time{comp_time}")
         #print(f"Queue {que}")
